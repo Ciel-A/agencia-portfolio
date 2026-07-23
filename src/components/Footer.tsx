@@ -50,12 +50,10 @@ export default function Footer({ modelName }: FooterProps) {
               </a>
               <a
                 href="mailto:valentinapatri09@gmail.com"
-                target="_blank"
-                rel="noopener noreferrer"
                 className="p-2 text-zinc-500 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-50 rounded-full hover:bg-zinc-100 dark:hover:bg-zinc-900 transition-all duration-250"
-                aria-label="Website"
+                aria-label="Email"
               >
-                <Globe className="w-5 h-5" />
+                <Mail className="w-5 h-5" />
               </a>
             </div>
           </div>
