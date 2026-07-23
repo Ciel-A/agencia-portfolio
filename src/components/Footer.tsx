@@ -63,8 +63,8 @@ export default function Footer({ modelName }: FooterProps) {
         <div className="mt-12 pt-8 border-t border-zinc-200/50 dark:border-zinc-800/50 flex flex-col sm:flex-row items-center justify-between text-xs text-zinc-400 dark:text-zinc-500 font-light gap-4">
           <p>© {currentYear} {modelName || "Agencia Portfolio"}. Todos los derechos reservados.</p>
           <p className="flex items-center gap-1">
-            <span>Powered by</span>
-            <span className="font-semibold tracking-wider text-zinc-600 dark:text-zinc-400 uppercase">Stitch UI</span>
+            <span>Diseñado y desarrollado por Maximiliano Montenegro</span>
+            
           </p>
         </div>
       </div>
