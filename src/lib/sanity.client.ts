@@ -8,6 +8,5 @@ export const client = createClient({
   projectId,
   dataset,
   apiVersion,
-  useCdn: false, // 👈 Forzamos a consultar la API directa para traer datos actualizados en el build
-  token: process.env.SANITY_API_READ_TOKEN, // 👈 Se conecta de forma autenticada si la variable existe
+  useCdn: false, // Forzamos fetch directo sin caché
 });
