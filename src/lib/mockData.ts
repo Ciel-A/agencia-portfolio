@@ -3,6 +3,19 @@ import { ModelProfile } from "./types";
 export const MOCK_MODEL_DATA: ModelProfile = {
   name: "Alessandra Vanni",
   bio: "Alessandra es una modelo profesional con más de 6 años de experiencia en pasarelas internacionales y campañas editoriales de alta costura. Basada entre Milán y Buenos Aires, ha trabajado con marcas de renombre mundial, destacándose por su versatilidad, elegancia y fuerte presencia escénica.",
+  location: "Buenos Aires, Argentina",
+  bookingEmail: "valentinapatri09@gmail.com",
+  instagramUrl: "https://www.instagram.com/val_patri/",
+  compCardUrl: "/comp-card-sample.pdf",
+  stats: {
+    height: "178 cm",
+    bust: "85 cm",
+    waist: "60 cm",
+    hips: "89 cm",
+    shoes: "39",
+    eyes: "Verde Esmeralda",
+    hair: "Castaño Claro",
+  },
   measurements: {
     height: "178 cm",
     bust: "85 cm",
@@ -26,6 +39,9 @@ export const MOCK_MODEL_DATA: ModelProfile = {
         },
       },
       alt: "Retrato primer plano de Alessandra Vanni",
+      category: "Editorial",
+      isHero: true,
+      visible: true,
     },
     {
       asset: {
@@ -40,6 +56,9 @@ export const MOCK_MODEL_DATA: ModelProfile = {
         },
       },
       alt: "Campaña editorial al aire libre, vestido de verano",
+      category: "Comercial",
+      isHero: false,
+      visible: true,
     },
     {
       asset: {
@@ -54,6 +73,9 @@ export const MOCK_MODEL_DATA: ModelProfile = {
         },
       },
       alt: "Sesión de fotos casual urbana",
+      category: "Polaroids",
+      isHero: false,
+      visible: true,
     },
     {
       asset: {
@@ -68,6 +90,9 @@ export const MOCK_MODEL_DATA: ModelProfile = {
         },
       },
       alt: "Retrato de perfil con luz natural",
+      category: "Editorial",
+      isHero: false,
+      visible: true,
     },
     {
       asset: {
@@ -82,6 +107,9 @@ export const MOCK_MODEL_DATA: ModelProfile = {
         },
       },
       alt: "Fotografía editorial de moda en blanco y negro",
+      category: "Pasarela",
+      isHero: false,
+      visible: true,
     },
     {
       asset: {
@@ -96,6 +124,9 @@ export const MOCK_MODEL_DATA: ModelProfile = {
         },
       },
       alt: "Posado editorial de alta costura con fondo amarillo",
+      category: "Comercial",
+      isHero: false,
+      visible: true,
     },
     {
       asset: {
@@ -110,6 +141,9 @@ export const MOCK_MODEL_DATA: ModelProfile = {
         },
       },
       alt: "Retrato expresivo estudio fotográfico",
+      category: "Polaroids",
+      isHero: false,
+      visible: true,
     },
   ],
 };

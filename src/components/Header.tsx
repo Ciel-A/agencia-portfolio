@@ -6,9 +6,13 @@ import ThemeToggle from "./ThemeToggle";
 
 interface HeaderProps {
   modelName: string;
+  bookingEmail?: string;
+  instagramUrl?: string;
 }
 
-export default function Header({ modelName }: HeaderProps) {
+export default function Header({ modelName, bookingEmail, instagramUrl }: HeaderProps) {
+  const emailContact = bookingEmail || "valentinapatri09@gmail.com";
+  const instagramContact = instagramUrl || "https://www.instagram.com/val_patri/";
   return (
     <header className="sticky top-0 z-50 w-full transition-all duration-300 glass border-b border-zinc-200/50 dark:border-zinc-800/50 bg-white/70 dark:bg-zinc-950/70">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
@@ -48,20 +52,22 @@ export default function Header({ modelName }: HeaderProps) {
           {/* Social icons */}
           <div className="flex items-center gap-1 sm:gap-2">
             <a
-              href="https://www.instagram.com/val_patri/"
+              href={instagramContact}
               target="_blank"
               rel="noopener noreferrer"
               className="p-2 text-zinc-500 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-50 rounded-full hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-all duration-200"
               aria-label="Instagram"
-              title="Instagram: @val_patri"
+              title="Instagram"
             >
               <Instagram className="w-[18px] h-[18px]" />
             </a>
             <a
-              href="mailto:valentinapatri09@gmail.com"
+              href={`https://mail.google.com/mail/?view=cm&fs=1&to=${emailContact}`}
+              target="_blank"
+              rel="noopener noreferrer"
               className="p-2 text-zinc-500 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-50 rounded-full hover:bg-zinc-100 dark:hover:bg-zinc-800 transition-all duration-200"
               aria-label="Email"
-              title="Email: valentinapatri09@gmail.com"
+              title={`Enviar correo a ${emailContact}`}
             >
               <Mail className="w-[18px] h-[18px]" />
             </a>
